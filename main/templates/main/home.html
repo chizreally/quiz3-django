@@ -25,12 +25,26 @@
         p {
             color: #666;
         }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #4a90d9;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+.btn:hover {
+    background-color: #357abd;
+}
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to the Student Records App</h1>
         <p>This is a simple Django project for managing student data.</p>
+        <a href="{% url 'students' %}" class="btn">View Student Records</a>
     </div>
 </body>
 </html>
